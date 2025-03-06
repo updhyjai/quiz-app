@@ -1,0 +1,27 @@
+#highscores-list{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    font-size: 2rem;
+    font-weight: 400;
+    color: rgba(100, 149, 237,0.75);
+    padding-block: 2rem;
+}
+
+#highscores-list > div{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 0.5rem;
+}
+
+#highscores-list > div:hover{
+    color: rgba(100, 149, 237,1);
+    transform: scale(1.025);
+    transition: transform 250ms, color 250ms;
+}
+
+#highscores-list > div span{
+    width: 100%;
+    text-align: center;
+}
