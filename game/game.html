@@ -1,1 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App - Play</title>
+    <link rel="stylesheet" href="../app.css" />
+    <link rel="stylesheet" href="game.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div id="loader" class="flex-column flex-center"></div>
+      <div id="game" class="flex-column justify-center hidden">
+        <div id="hud">
+          <div id="hud-item" class="flex-column flex-center">
+            <div class="hud-text" id="question-counter">
+              1/4
+            </div>
+          </div>
+         
+          <div id="hud-item">
+            <div id="progress-bar">
+            <div id="progress-bar-status"></div>
 
+            </div>
+          </div>
+          <div id="hud-item">
+            <div class="hud-text" id="score">
+              5
+            </div>
+          </div>
+        </div>
+        <h2 id="question">Question</h2>
+        <div class="choice-container">
+          <p class="choice-prefix">A</p>
+          <p class="choice-text" data-number="1">Choice A</p>
+        </div>
+        <div class="choice-container">
+          <p class="choice-prefix">B</p>
+          <p class="choice-text" data-number="2">Choice B</p>
+        </div>
+        <div class="choice-container">
+          <p class="choice-prefix">C</p>
+          <p class="choice-text" data-number="3">Choice C</p>
+        </div>
+        <div class="choice-container">
+          <p class="choice-prefix">D</p>
+          <p class="choice-text" data-number="4">Choice D</p>
+        </div>
+      </div>
+    </div>
+    <script src="game.js"></script>
+  </body>
+</html>

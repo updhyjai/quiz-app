@@ -1,0 +1,88 @@
+#game{
+    width: 95%;
+}
+.choice-container{
+    display: flex;
+    width: 100%;
+    border: 0.1rem solid cornflowerblue;
+    margin: 1rem auto;
+    font-size: 2rem;
+}
+
+.choice-container:hover,
+.choice-container:focus{
+    cursor: pointer;
+    box-shadow: 0.2rem 0rem 0.4rem 0 cornflowerblue;
+    border: 0.2rem solid cornflowerblue;
+    transform: translateX(0.5rem);
+    transition: box-shadow 250ms ease-in, transform 0.25s ease-in-out;
+}
+
+.choice-prefix{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding: 1.5rem 2rem; */
+    color:azure;
+    width: 5rem;
+    background-color: cornflowerblue;
+}
+.choice-container:hover  .choice-prefix{
+    transform: translateX(-0.1rem);
+    transition: transform 0.25s;
+}
+
+.choice-text{
+    padding: 1.5rem;
+    width: 100%;
+}
+
+.correct-choice, .correct-choice:hover{
+    border: 0.1rem solid green;
+    box-shadow: 0.1rem 0.1rem 1.2rem green inset;
+    transform: none;
+}
+
+.incorrect-choice, .incorrect-choice:hover{
+    border: 0.1rem solid orangered;
+    box-shadow: 0.1rem 0.1rem 1.2rem  orangered inset;
+    transform: none;
+}
+
+.incorrect-choice > .choice-prefix{
+    background-color:  orangered;
+}
+.correct-choice > .choice-prefix{
+    background-color:  green;
+}
+
+#hud{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: fit-content;
+    padding-bottom: 10rem;
+}
+
+
+.hud-text{
+    text-align: center;
+    font-size: 4.8rem;
+    color: cornflowerblue;
+    font-weight: bold;
+    line-height: 5rem;
+}
+
+
+#progress-bar{
+    width: 20rem;
+    height: 4rem;
+    border: 1px solid cornflowerblue;
+}
+
+#progress-bar-status{
+    width: auto;
+    height: 100%;
+    background-color: cornflowerblue;
+    transition: width 500ms ease-out;
+}
