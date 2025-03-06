@@ -1,0 +1,25 @@
+form{
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+input#username{
+    margin-block: 1rem;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    width: 20rem;
+    border: 0.05rem solid #6495ed;
+    color: #6495ed;
+}
+
+input#username:focus-visible{
+    outline: none;
+    box-shadow: 0 0.2rem 1.4rem rgba(100, 149, 237, 0.5);
+}
+
+input#username::placeholder{
+    color: rgba(100, 149, 237, 0.5);
+}
+

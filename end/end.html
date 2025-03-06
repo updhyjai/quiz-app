@@ -1,1 +1,24 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>End of Quiz</title>
+    <link rel="stylesheet" href="../app.css">
+    <link rel="stylesheet" href="end.css">
+</head>
+<body>
+    <div class="container">
+        <div id="end" class="flex-center flex-column">
+            <h1 id="final-score">0</h1>
+            <form>
+                <input type="text" name="username" id="username" placeholder="Username" />
+                <button id="submit-username" class="btn" onclick="submitUsername(event)" disabled>Submit</button>
+            </form>
+            <a class="btn text-center" href="../game/game.html">Play Again</a>
+            <a class="btn text-center" href="../">Go Home</a>
+        </div>
+    </div>
+    <script src="end.js"></script>
+</body>
+</html>
